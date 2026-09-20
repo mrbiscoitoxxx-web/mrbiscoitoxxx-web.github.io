@@ -255,20 +255,26 @@ h1 {
 
 .hero-stage {
   position: relative; overflow: hidden;
-  aspect-ratio: 1101 / 1264;
-  min-height: 520px; max-height: 86vh;
+  aspect-ratio: 4 / 5;
+  min-height: 560px; max-height: 92vh;
   padding: 36px;
   color: #fff;
   display: flex; flex-direction: column; justify-content: space-between;
   background: var(--black);
 }
-.hero-stage::before {
-  content: ''; position: absolute; inset: 0;
-  background: url('laiz-hero.jpg') center top / cover;
+.hero-photo {
+  position: absolute; inset: 0; z-index: 0;
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: 52% 0%;
+  transform: scale(1.32);
+  transform-origin: 52% 0%;
+  pointer-events: none;
   filter: saturate(.95) contrast(1.03);
 }
+.hero-stage::before { display: none; }
 .hero-stage::after {
-  content: ''; position: absolute; inset: 0;
+  content: ''; position: absolute; inset: 0; z-index: 1;
   background: linear-gradient(
     180deg,
     rgba(15, 13, 12, .50) 0%,
@@ -278,7 +284,8 @@ h1 {
     rgba(76, 17, 32, .22) 91%,
     rgba(76, 17, 32, .72) 100%);
 }
-.hero-stage > * { position: relative; z-index: 1; }
+.hero-stage > * { position: relative; z-index: 2; }
+.hero-stage > .hero-photo { z-index: 0; }
 
 .place-line, .stage-note {
   display: flex; align-items: center; gap: 14px;
@@ -392,12 +399,24 @@ h1 {
   filter: saturate(.94) contrast(1.03);
   transition: transform .5s ease, filter .4s ease;
 }
+.gallery-strip figure:nth-child(1) img {
+  object-position: center 22%;
+  transform: scale(1.55);
+  transform-origin: center 26%;
+}
+.gallery-strip figure:nth-child(2) img {
+  object-position: center 24%;
+  transform: scale(1.52);
+  transform-origin: center 28%;
+}
 .gallery-strip figure::after {
   content: ''; position: absolute; inset: 0;
   background: linear-gradient(180deg, rgba(76, 17, 32, 0) 72%, rgba(76, 17, 32, .14) 100%);
   pointer-events: none;
 }
 .gallery-strip figure:hover img { transform: scale(1.04); filter: saturate(1) contrast(1.02); }
+.gallery-strip figure:nth-child(1):hover img { transform: scale(1.62); }
+.gallery-strip figure:nth-child(2):hover img { transform: scale(1.58); }
 
 @media (max-width: 520px) {
   .gallery-strip { padding: 16px 12px; }
@@ -1057,12 +1076,18 @@ html.gate-on body > *:not(#agegate):not(#splash) { visibility: hidden; }
 .about-shot {
   margin: clamp(52px, 6vw, 76px) auto 0;
   max-width: 1080px;
+  width: 100%;
+  aspect-ratio: 3 / 2;
   position: relative; overflow: hidden;
   outline: 1px solid var(--line-gold); outline-offset: -1px;
   background: var(--black);
 }
 .about-shot img {
-  display: block; width: 100%; height: auto;
+  display: block; width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: 58% 14%;
+  transform: scale(1.48);
+  transform-origin: 58% 18%;
   filter: saturate(.94) contrast(1.03);
 }
 .about-shot::after {
