@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Laiz Lux Events — Adults only</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#FDFAF5" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%236E1B2B'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Georgia' font-size='38' fill='%23C8A24A'%3EL%3C/text%3E%3C/svg%3E" />
+    <style>
+      @font-face{font-family:'Bodoni Moda';font-style:normal;font-weight:500;font-display:swap;src:url('fonts/bodoni-500.woff2') format('woff2')}
+      :root {
+        --ink: #241E1B; --ink-soft: #5C514B;
+        --bordo: #6E1B2B; --gold: #C8A24A; --gold-deep: #9A7629;
+        --shell: #FDFAF5; --line-gold: rgba(200, 162, 74, .38);
+        --display: 'Bodoni Moda', Didot, 'Times New Roman', serif;
+        --sans: Inter, 'Helvetica Neue', Arial, sans-serif;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0; min-height: 100vh;
+        display: grid; place-items: center;
+        padding: 32px 16px;
+        background: var(--shell); color: var(--ink);
+        font-family: var(--sans);
+        -webkit-font-smoothing: antialiased;
+      }
+      main {
+        width: min(540px, 100%);
+        display: grid; justify-items: center; gap: 20px;
+        text-align: center;
+      }
+      .rule { width: 62px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); }
+      .brand {
+        margin: 0; font-family: var(--display);
+        font-size: 17px; font-weight: 500;
+        letter-spacing: .3em; text-transform: uppercase; color: var(--bordo);
+      }
+      h1 {
+        margin: 4px 0 0; font-family: var(--display); font-weight: 500;
+        font-size: clamp(28px, 5vw, 40px); line-height: 1.15;
+        letter-spacing: -.01em; color: var(--bordo); text-wrap: balance;
+      }
+      p { margin: 0; max-width: 44ch; font-size: 15.5px; line-height: 1.75; color: var(--ink-soft); }
+      p.pt { font-size: 14.5px; color: #7A6F68; }
+      a.leave {
+        margin-top: 8px; min-height: 52px;
+        display: inline-flex; align-items: center; justify-content: center;
+        padding: 0 30px; border: 1px solid var(--bordo); border-radius: 4px;
+        color: var(--bordo); text-decoration: none;
+        font-size: 14px; font-weight: 800; letter-spacing: .02em;
+        transition: .2s ease;
+      }
+      a.leave:hover { background: var(--bordo); color: #F7F0E2; }
+      a.leave:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+      footer { margin-top: 6px; font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--gold-deep); }
+      @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+    </style>
+  </head>
+  <body>
+    <main>
+      <span class="rule" aria-hidden="true"></span>
+      <p class="brand">Laiz Lux Events</p>
+      <h1>Thank you for visiting.</h1>
+      <p>This site is intended for visitors aged 18 and over, so we cannot show it to you today. You are welcome back once you reach that age.</p>
+      <p class="pt" lang="pt">Este site destina-se a maiores de 18 anos, por isso não o podemos mostrar hoje. Será bem-vindo de volta quando tiver essa idade.</p>
+      <a class="leave" href="https://www.google.com" rel="noreferrer">Leave this site</a>
+      <footer>Laiz Lux Events · Lisboa &amp; Cascais</footer>
+    </main>
+  </body>
+</html>

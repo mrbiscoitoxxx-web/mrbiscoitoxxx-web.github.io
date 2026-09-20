@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- ══════════════════════════════════════════════════════════════════
+         ENDEREÇO DO SITE — quando tiveres domínio próprio, substitui o
+         endereço nas linhas marcadas com [URL] aqui em baixo.
+         ══════════════════════════════════════════════════════════════════ -->
+
+    <title>Laiz Lux Events | Social company for international visitors in Lisbon &amp; Cascais</title>
+    <meta name="description" content="English-speaking, strictly non-sexual social company for international visitors and residents in Lisbon, Cascais, Estoril, Ericeira and Comporta. Dinners, cultural events and celebrations. 18+." />
+    <meta name="keywords" content="social company Lisbon, event companion Lisbon, social company Cascais, international visitors Lisbon, events Estoril, social company Ericeira, social company Comporta, dinner company Lisbon" />
+    <meta name="author" content="Laiz Lux Events" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#6E1B2B" />
+
+    <!-- [URL] -->
+    <link rel="canonical" href="https://mrbiscoitoxxx-web.github.io/" />
+    <!-- [URL] -->
+    <link rel="alternate" hreflang="en" href="https://mrbiscoitoxxx-web.github.io/" />
+    <!-- [URL] -->
+    <link rel="alternate" hreflang="pt" href="https://mrbiscoitoxxx-web.github.io/?lang=pt" />
+    <!-- [URL] -->
+    <link rel="alternate" hreflang="x-default" href="https://mrbiscoitoxxx-web.github.io/" />
+
+    <meta property="og:site_name" content="Laiz Lux Events" />
+    <meta property="og:title" content="Laiz Lux Events | Your occasion in Lisbon, made easy." />
+    <meta property="og:description" content="Warm, strictly non-sexual social company for international visitors and residents in Lisbon and on the Portuguese coast." />
+    <!-- [URL] -->
+    <meta property="og:url" content="https://mrbiscoitoxxx-web.github.io/" />
+    <!-- [URL] -->
+    <meta property="og:image" content="https://mrbiscoitoxxx-web.github.io/og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Laiz Lux Events — your occasion in Lisbon, made easy." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:locale:alternate" content="pt_PT" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Laiz Lux Events | Your occasion in Lisbon, made easy." />
+    <meta name="twitter:description" content="Warm, strictly non-sexual social company for international visitors and residents in Lisbon and Cascais." />
+
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%236E1B2B'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Georgia' font-size='38' fill='%23C8A24A'%3EL%3C/text%3E%3C/svg%3E" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="preload" as="font" type="font/woff2" href="fonts/bodoni-500.woff2" crossorigin />
+    <link rel="preload" as="image" href="laiz-hero.jpg" />
+    <script>
+      /* ─── Vinheta de abertura ───
+         enabled        : liga/desliga a animação de entrada
+         oncePerSession : true = só na primeira página de cada visita
+         ?intro=1 no endereço força sempre a repetição. */
+      window.LAIZ_INTRO = { enabled: true, oncePerSession: false };
+      (function () {
+        try {
+          var cfg = window.LAIZ_INTRO;
+          var hash = window.location.hash || '';
+          if (/^#(top|about|gallery|how|faq|details|inquiry)$/.test(hash)) return;
+          var forced = new URLSearchParams(window.location.search).get('intro') === '1';
+          if (!forced) {
+            if (!cfg.enabled) return;
+            if (cfg.oncePerSession) {
+              try { if (sessionStorage.getItem('laiz-intro') === '1') return; } catch (e) {}
+            }
+          }
+          document.documentElement.classList.add('splash-on');
+        } catch (e) {}
+      })();
+    </script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="splash" id="splash" aria-hidden="true">
+      <div class="splash-veil splash-veil-top"></div>
+      <div class="splash-veil splash-veil-bottom"></div>
+
+      <div class="splash-stage">
+        <canvas class="splash-dust" id="splash-dust"></canvas>
+        <div class="splash-glow"></div>
+
+        <div class="splash-rules">
+          <i style="--y: 34%; --delay: .26s; --hue: rgba(200,162,74,.8)"></i>
+          <i style="--y: 50%; --delay: .40s; --hue: rgba(140,36,56,.9)"></i>
+          <i style="--y: 66%; --delay: .32s; --hue: rgba(200,162,74,.55)"></i>
+        </div>
+
+        <span class="splash-orn splash-orn-a"></span>
+        <span class="splash-orn splash-orn-b"></span>
+        <span class="splash-orn splash-orn-c"></span>
+
+        <div class="splash-mark">
+          <svg class="mark" viewBox="0 0 1000 300" role="img" aria-label="Laiz Lux Events">
+            <defs>
+              <linearGradient id="sp-gold" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#F0DDA6" />
+                <stop offset=".46" stop-color="#C8A24A" />
+                <stop offset=".62" stop-color="#8E6C25" />
+                <stop offset="1" stop-color="#E4C577" />
+              </linearGradient>
+              <linearGradient id="sp-edge" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#8C2438" />
+                <stop offset=".35" stop-color="#C8A24A" />
+                <stop offset="1" stop-color="#F3E6C8" />
+              </linearGradient>
+              <linearGradient id="sp-head" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#C8A24A" stop-opacity="0" />
+                <stop offset=".5" stop-color="#FFF4D4" stop-opacity=".95" />
+                <stop offset="1" stop-color="#C8A24A" stop-opacity="0" />
+              </linearGradient>
+              <linearGradient id="sp-band" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#000" />
+                <stop offset=".36" stop-color="#555" />
+                <stop offset=".5" stop-color="#fff" />
+                <stop offset=".64" stop-color="#555" />
+                <stop offset="1" stop-color="#000" />
+              </linearGradient>
+
+              <clipPath id="sp-wipe-stroke" clipPathUnits="userSpaceOnUse">
+                <rect class="wipe wipe-stroke" x="0" y="-40" width="1000" height="380" />
+              </clipPath>
+              <clipPath id="sp-wipe-fill" clipPathUnits="userSpaceOnUse">
+                <rect class="wipe wipe-fill" x="0" y="-40" width="1000" height="380" />
+              </clipPath>
+              <mask id="sp-shine" maskUnits="userSpaceOnUse" x="-600" y="-100" width="2400" height="500">
+                <rect class="shine-band" x="0" y="-100" width="330" height="500" fill="url(#sp-band)" />
+              </mask>
+            </defs>
+
+            <g class="ink ink-fill" clip-path="url(#sp-wipe-fill)">
+              <text id="lineA" x="507" y="158">LAIZ LUX</text>
+              <text id="lineB" x="518" y="232">EVENTS</text>
+            </g>
+
+            <g class="ink ink-stroke" clip-path="url(#sp-wipe-stroke)">
+              <text x="507" y="158">LAIZ LUX</text>
+              <text x="518" y="232">EVENTS</text>
+            </g>
+
+            <g class="ink ink-shine" mask="url(#sp-shine)">
+              <text x="507" y="158">LAIZ LUX</text>
+              <text x="518" y="232">EVENTS</text>
+            </g>
+
+            <rect class="light-head" x="-7" y="18" width="14" height="264" fill="url(#sp-head)" />
+          </svg>
+
+          <p class="splash-sub">Lisboa · Cascais</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="agegate" id="agegate" role="dialog" aria-modal="true"
+         aria-labelledby="gate-title" aria-describedby="gate-body" hidden>
+      <div class="gate-backdrop"></div>
+      <div class="gate-panel" role="document">
+        <span class="gate-rule" aria-hidden="true"></span>
+        <p class="gate-brand">Laiz Lux Events</p>
+        <h2 id="gate-title" data-i18n="gateTitle">Are you 18 or older?</h2>
+        <p id="gate-body" class="gate-body" data-i18n="gateBody">This site is intended for adults only. Please confirm your age to continue.</p>
+        <div class="gate-actions">
+          <button type="button" class="button primary-button" id="gate-yes" data-i18n="gateYes">Yes, I am 18 or older</button>
+          <button type="button" class="button gate-no" id="gate-no" data-i18n="gateNo">No, I am under 18</button>
+        </div>
+        <p class="gate-legal"><span data-i18n="gateLegalA">By continuing you confirm that you are of legal age to view this content and accept the</span> <a href="termos.html" data-i18n="gateTerms">Terms of Use</a> <span data-i18n="gateLegalB">and the</span> <a href="privacidade.html" data-i18n="gatePrivacy">Privacy Policy</a>.</p>
+        <span class="gate-rule" aria-hidden="true"></span>
+      </div>
+    </div>
+
+    <a class="skip-link" href="#top" data-i18n="skip">Skip to content</a>
+
+    <svg class="icon-sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="i-wa" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-8.5 8.5 8.6 8.6 0 0 1-3.9-.9L3.2 21l1.9-5.5A8.4 8.4 0 0 1 4 11.5 8.4 8.4 0 0 1 12.5 3 8.4 8.4 0 0 1 21 11.5Z"/><path d="M9.2 9.1c.2-.5.4-.5.7-.5h.5c.2 0 .4 0 .6.5l.7 1.6c.1.2 0 .4-.1.5l-.4.5c-.1.2-.2.3 0 .6a6 6 0 0 0 2.7 2.3c.3.1.4 0 .5-.1l.6-.7c.1-.2.3-.2.5-.1l1.6.8c.2.1.3.3.3.4a1.7 1.7 0 0 1-1.2 1.6 2.9 2.9 0 0 1-2.1-.2 9.6 9.6 0 0 1-4.6-4.2 3.4 3.4 0 0 1-.6-1.8c0-.6.2-1 .3-1.2Z"/></symbol>
+      <symbol id="i-glass" viewBox="0 0 24 24"><path d="M7.5 3h9l-.7 5.6a4.3 4.3 0 0 1-8.6 0L7.5 3Z"/><path d="M12 13.5V20"/><path d="M8.5 20h7"/></symbol>
+      <symbol id="i-ticket" viewBox="0 0 24 24"><path d="M3 8.6c0-.9.7-1.6 1.5-1.6h15c.8 0 1.5.7 1.5 1.6v1.9a2 2 0 0 0 0 3.9v2c0 .9-.7 1.6-1.5 1.6h-15A1.6 1.6 0 0 1 3 16.4v-2a2 2 0 0 0 0-3.9V8.6Z"/><path d="M14.5 7.5v9" stroke-dasharray="2.2 2.4"/></symbol>
+      <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M11 3.5 12.6 8l4.5 1.6-4.5 1.7L11 15.8 9.4 11.3 4.9 9.6 9.4 8 11 3.5Z"/><path d="M18 14.5l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8.8-2.2Z"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s7-5.6 7-10.2A7 7 0 1 0 5 10.8C5 15.4 12 21 12 21Z"/><circle cx="12" cy="10.6" r="2.6"/></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14.5 14.5 0 0 1 0 18 14.5 14.5 0 0 1 0-18Z"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2.2"/><path d="M5 15.5V6.2C5 5 6 4 7.2 4H16"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.6 4.6 4.6L19 7"/></symbol>
+      <symbol id="i-sound-on" viewBox="0 0 24 24"><path d="M4 9.5h3.2L12 5.4v13.2L7.2 14.5H4a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1Z"/><path d="M15.8 9.2a4 4 0 0 1 0 5.6"/><path d="M18.4 6.6a7.6 7.6 0 0 1 0 10.8"/></symbol>
+      <symbol id="i-sound-off" viewBox="0 0 24 24"><path d="M4 9.5h3.2L12 5.4v13.2L7.2 14.5H4a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1Z"/><path d="m16.3 9.7 4.4 4.6"/><path d="m20.7 9.7-4.4 4.6"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4.5 12h15"/><path d="m13.5 6 6 6-6 6"/></symbol>
+    </svg>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Laiz Lux Events home"><span aria-hidden="true">L</span>Laiz Lux Events</a>
+
+      <nav id="main-nav" aria-label="Main navigation">
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#gallery" class="nav-gallery" hidden data-i18n="navGallery">Gallery</a>
+        <a href="#how" data-i18n="navHow">How it works</a>
+        <a href="#faq" data-i18n="navFaq">FAQ</a>
+        <a href="#inquiry" data-i18n="navContact">Contact</a>
+      </nav>
+
+      <div class="header-tools">
+        <div class="language-switch" role="group" aria-label="Choose language">
+          <button type="button" class="active" data-language="en" aria-pressed="true">EN</button>
+          <button type="button" data-language="pt" aria-pressed="false">PT</button>
+        </div>
+        <button type="button" class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Menu">
+          <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <strong class="age-notice" data-i18n="age">18+ · Adults only</strong>
+          <p class="eyebrow" data-i18n="eyebrow">Lisbon · Cascais</p>
+          <p class="kicker" data-i18n="kicker">For international visitors &amp; residents</p>
+          <h1 data-i18n="title">Your occasion in Lisbon, made easy.</h1>
+          <p class="hero-body" data-i18n="body">Warm, strictly non-sexual social company for international men visiting or living in Lisbon and Cascais — for dinners, cultural events and celebrations.</p>
+          <div class="hero-actions">
+            <a class="button primary-button hero-cta js-wa" href="https://api.whatsapp.com/message/2DVRTS4D55OAC1?autoload=1&amp;app_absent=0" target="_blank" rel="noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="whatsapp">WhatsApp</span></a>
+            <a class="button secondary-button" href="#inquiry" data-i18n="plan">Plan an occasion</a>
+          </div>
+          <p class="microcopy" data-i18n="micro">Usually replies within the hour · Lisbon &amp; Cascais · 18+</p>
+          <p class="trust-line"><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg><span data-i18n="trust">Respectful · Discreet · Clearly arranged</span></p>
+        </div>
+        <div class="hero-stage" role="img" aria-label="Laiz in a red satin gown, studio portraits">
+          <div class="place-line"><span>LISBOA</span><i></i><span>CASCAIS</span></div>
+          <div class="stage-note"><span>38.72° N</span><span>ATLANTIC COAST</span></div>
+        </div>
+        <div class="fact-strip">
+          <span><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg><i data-i18n="location">Lisbon &amp; Cascais</i></span>
+          <span><svg class="icon" aria-hidden="true"><use href="#i-globe"/></svg>Português &amp; English</span>
+          <span><b>18+</b></span>
+        </div>
+      </section>
+
+      <section class="areas-section" aria-labelledby="areas-title">
+        <div>
+          <p class="eyebrow" data-i18n="areasKicker">Service area · Google Maps</p>
+          <h2 id="areas-title" data-i18n="areasTitle">Across Lisbon and the coast.</h2>
+          <p data-i18n="areasBody">Available by arrangement in Lisbon, Cascais, Estoril, Ericeira and Comporta. Open any destination in Google Maps.</p>
+        </div>
+        <div class="area-links">
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Lisbon%2C%20Portugal" target="_blank" rel="noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Lisbon</a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Cascais%2C%20Portugal" target="_blank" rel="noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Cascais</a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Estoril%2C%20Portugal" target="_blank" rel="noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Estoril</a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Ericeira%2C%20Portugal" target="_blank" rel="noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Ericeira</a>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Comporta%2C%20Portugal" target="_blank" rel="noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>Comporta</a>
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="section-intro">
+          <p class="eyebrow" data-i18n="aboutKicker">A local contact you can trust</p>
+          <h2 data-i18n="aboutTitle">Good company, clearly arranged.</h2>
+          <p data-i18n="aboutBody">For international men travelling, working or living in Lisbon and Cascais who would like friendly company at a dinner, cultural event or celebration. Every arrangement starts with clear expectations and mutual respect.</p>
+        </div>
+        <figure class="about-shot">
+          <img src="about-shot.jpg" width="1400" height="933" loading="lazy"
+               data-i18n-alt="aboutAlt" alt="Laiz seated in a black armchair, studio portrait" />
+        </figure>
+
+        <div class="occasion-grid">
+          <article class="occasion-card"><span>01</span><svg class="icon" aria-hidden="true"><use href="#i-glass"/></svg><h3 data-i18n="card1Title">Dinners</h3><p data-i18n="card1Body">Relaxed social company for a restaurant reservation or special evening.</p></article>
+          <article class="occasion-card"><span>02</span><svg class="icon" aria-hidden="true"><use href="#i-ticket"/></svg><h3 data-i18n="card2Title">Culture &amp; events</h3><p data-i18n="card2Body">Company for exhibitions, performances, receptions and public events.</p></article>
+          <article class="occasion-card"><span>03</span><svg class="icon" aria-hidden="true"><use href="#i-sparkle"/></svg><h3 data-i18n="card3Title">Celebrations</h3><p data-i18n="card3Body">A friendly presence for parties and respectful social occasions.</p></article>
+        </div>
+      </section>
+
+      <section class="gallery-section" id="gallery" aria-labelledby="gallery-title" hidden>
+        <div class="gallery-intro">
+          <p class="eyebrow" data-i18n="galleryKicker">Moments</p>
+          <h2 id="gallery-title" data-i18n="galleryTitle">Lisbon, at its best hours.</h2>
+        </div>
+        <div class="gallery-strip" id="gallery-strip"></div>
+      </section>
+
+      <section class="steps-section" id="how" aria-labelledby="how-title">
+        <div class="steps-intro">
+          <p class="eyebrow gold" data-i18n="howKicker">How it works</p>
+          <h2 id="how-title" data-i18n="howTitle">Three steps, no guesswork.</h2>
+          <p data-i18n="howBody">From the first message to the evening itself, everything is agreed in advance — so you know exactly what to expect.</p>
+        </div>
+        <ol class="steps-list">
+          <li>
+            <span class="step-number">01</span>
+            <h3 data-i18n="step1Title">Send the details</h3>
+            <p data-i18n="step1Body">A short WhatsApp message with the date, the city, the type of occasion and how long you would like company for.</p>
+          </li>
+          <li>
+            <span class="step-number">02</span>
+            <h3 data-i18n="step2Title">Confirm together</h3>
+            <p data-i18n="step2Body">We agree the meeting point, the timing and what is included. Any questions are answered before anything is confirmed.</p>
+          </li>
+          <li>
+            <span class="step-number">03</span>
+            <h3 data-i18n="step3Title">Meet and enjoy the evening</h3>
+            <p data-i18n="step3Body">We meet at the agreed public venue at the agreed time. Warm, easy company — nothing more, nothing less.</p>
+          </li>
+        </ol>
+      </section>
+
+      <section class="evening-section" id="evening" aria-labelledby="evening-title">
+        <figure class="evening-shot">
+          <img src="evening.jpg" width="760" height="1544" loading="lazy"
+               data-i18n-alt="eveningAlt" alt="Laiz in a black blazer, studio portrait" />
+        </figure>
+
+        <div class="evening-copy">
+          <p class="eyebrow" data-i18n="eveningKicker">The city</p>
+          <h2 id="evening-title" data-i18n="eveningTitle">An evening in Lisbon.</h2>
+          <p class="evening-intro" data-i18n="eveningIntro">If you are planning the evening rather than just the company, here is how the city tends to work.</p>
+
+          <div class="evening-notes">
+            <article>
+              <h3 data-i18n="ev1Title">Dinner runs late</h3>
+              <p data-i18n="ev1Body">Lisbon sits down to dinner around nine. The tables worth having are in Príncipe Real, Chiado and along the Avenida da Liberdade, and the good ones are booked a few days ahead — worth doing before we confirm a date.</p>
+            </article>
+            <article>
+              <h3 data-i18n="ev2Title">The coast is close</h3>
+              <p data-i18n="ev2Body">Cascais and Estoril are about forty minutes from Cais do Sodré, the train running the whole way along the river. Ericeira lies north past Sintra; Comporta is south, over the bridge, and is an afternoon and an evening rather than a dinner.</p>
+            </article>
+            <article>
+              <h3 data-i18n="ev3Title">Openings and seasons</h3>
+              <p data-i18n="ev3Body">Galleries, concert halls and hotel receptions fill the calendar from September through June. August empties the city and moves everything to the sea.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="details-section" id="details">
+        <div>
+          <p class="eyebrow gold" data-i18n="detailsKicker">Before we meet</p>
+          <h2 data-i18n="detailsTitle">Simple, clear and comfortable.</h2>
+          <p data-i18n="detailsBody">Please share your date, location, type of occasion, expected duration, preferred language and whether you are visiting or living locally. Meetings take place in agreed public venues.</p>
+        </div>
+        <aside class="boundary-card"><strong>18+</strong><h3 data-i18n="boundaryTitle">Clear boundaries</h3><p data-i18n="boundaryBody">This page is exclusively for non-sexual social companionship at events and public occasions. No intimate services are offered, requested or negotiated.</p></aside>
+      </section>
+
+      <section class="faq-section" id="faq" aria-labelledby="faq-title">
+        <div class="faq-intro">
+          <p class="eyebrow" data-i18n="faqKicker">Questions</p>
+          <h2 id="faq-title" data-i18n="faqTitle">Everything worth asking first.</h2>
+        </div>
+        <div class="faq-list">
+          <details><summary><span data-i18n="q1">What exactly is included?</span></summary><p data-i18n="a1">Friendly, attentive company at a public occasion — conversation, a warm presence at the table and someone who knows the city. Nothing else is offered or implied.</p></details>
+          <details><summary><span data-i18n="q2">Is this an escort or intimate service?</span></summary><p data-i18n="a2">No. This is strictly non-sexual social company. Requests of an intimate nature are declined and end the conversation.</p></details>
+          <details><summary><span data-i18n="q3">How do I book?</span></summary><p data-i18n="a3">Send the details on WhatsApp using the form on this page. Messages usually get a reply within the hour. Booking a day or two ahead is best, though same-day is sometimes possible.</p></details>
+          <details><summary><span data-i18n="q4">Where do we meet?</span></summary><p data-i18n="a4">Always at an agreed public venue — a restaurant, a hotel lobby, or the entrance of the event itself.</p></details>
+          <details><summary><span data-i18n="q5">How is the fee arranged?</span></summary><p data-i18n="a5">The rate depends on the duration and location and is agreed on WhatsApp before anything is confirmed. No surprises and nothing negotiated on the night.</p></details>
+          <details><summary><span data-i18n="q6">Which languages can we speak?</span></summary><p data-i18n="a6">English and Portuguese, whichever you are more comfortable in.</p></details>
+          <details><summary><span data-i18n="q7">Do you travel outside Lisbon?</span></summary><p data-i18n="a7">Cascais, Estoril, Ericeira and Comporta are all available by arrangement. Anywhere further can be discussed, with travel agreed in advance.</p></details>
+          <details><summary><span data-i18n="q8">How discreet is this?</span></summary><p data-i18n="a8">Completely. Your details are never shared and nothing is published about an occasion without your agreement.</p></details>
+        </div>
+      </section>
+
+      <section class="inquiry-section" id="inquiry">
+        <div class="contact-intro">
+          <p class="eyebrow" data-i18n="contactKicker">Start with the details</p>
+          <h2 data-i18n="contactTitle">Let’s arrange your occasion.</h2>
+          <p data-i18n="contactBody">Fill in what you know and the message is written for you — then send it on WhatsApp in one tap.</p>
+        </div>
+
+        <div class="contact-grid">
+          <form class="inquiry-form" id="inquiry-form" novalidate>
+            <div class="field-row">
+              <p class="field">
+                <label for="f-date" data-i18n="fDate">Date</label>
+                <input type="date" id="f-date" name="date" />
+              </p>
+              <p class="field">
+                <label for="f-city" data-i18n="fCity">City</label>
+                <select id="f-city" name="city">
+                  <option value="Lisbon" data-i18n="cLisbon">Lisbon</option>
+                  <option value="Cascais">Cascais</option>
+                  <option value="Estoril">Estoril</option>
+                  <option value="Ericeira">Ericeira</option>
+                  <option value="Comporta">Comporta</option>
+                  <option value="other" data-i18n="optOther">Other</option>
+                </select>
+              </p>
+            </div>
+
+            <div class="field-row">
+              <p class="field">
+                <label for="f-occasion" data-i18n="fOccasion">Occasion</label>
+                <select id="f-occasion" name="occasion">
+                  <option value="dinner" data-i18n="optDinner">Dinner</option>
+                  <option value="culture" data-i18n="optCulture">Cultural event</option>
+                  <option value="celebration" data-i18n="optCelebration">Celebration</option>
+                  <option value="other" data-i18n="optOther">Other</option>
+                </select>
+              </p>
+              <p class="field">
+                <label for="f-duration" data-i18n="fDuration">Duration</label>
+                <select id="f-duration" name="duration">
+                  <option value="2h">2h</option>
+                  <option value="3h">3h</option>
+                  <option value="4h">4h</option>
+                  <option value="evening" data-i18n="optEvening">Full evening</option>
+                  <option value="undecided" data-i18n="optUndecided">Not sure yet</option>
+                </select>
+              </p>
+            </div>
+
+            <div class="field-row">
+              <p class="field">
+                <label for="f-language" data-i18n="fLanguage">Preferred language</label>
+                <select id="f-language" name="language">
+                  <option value="English">English</option>
+                  <option value="Português">Português</option>
+                  <option value="either" data-i18n="optEither">Either</option>
+                </select>
+              </p>
+              <p class="field">
+                <label for="f-status" data-i18n="fStatus">You are</label>
+                <select id="f-status" name="status">
+                  <option value="visiting" data-i18n="optVisiting">Visiting Portugal</option>
+                  <option value="living" data-i18n="optLiving">Living in Portugal</option>
+                </select>
+              </p>
+            </div>
+
+            <p class="field">
+              <label for="f-notes" data-i18n="fNotes">Anything else (optional)</label>
+              <textarea id="f-notes" name="notes" rows="3"></textarea>
+            </p>
+
+            <div class="form-preview">
+              <span class="preview-label" data-i18n="previewLabel">Your message</span>
+              <p id="message-preview" aria-live="polite"></p>
+            </div>
+
+            <div class="form-actions">
+              <a class="button primary-button" id="send-whatsapp" href="https://wa.me/351961039001" target="_blank" rel="noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="sendWhatsapp">Send on WhatsApp</span></a>
+              <button class="copy-button" id="copy-inquiry" type="button"><svg class="icon" aria-hidden="true"><use href="#i-copy"/></svg><span data-i18n="copyInquiry">Copy message</span></button>
+            </div>
+            <p class="microcopy" data-i18n="micro">Usually replies within the hour · Lisbon &amp; Cascais · 18+</p>
+            <p class="social-line" id="social-line" hidden>
+              <span class="social-label" data-i18n="alsoOn">Also on</span>
+              <span class="social-links"></span>
+            </p>
+          </form>
+
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>LAIZ LUX EVENTS · LISBON &amp; CASCAIS</span>
+      <span><a href="termos.html" data-i18n="footTerms">Terms of Use</a> · <a href="privacidade.html" data-i18n="footPrivacy">Privacy Policy</a> · <i data-i18n="age">18+ · Adults only</i></span>
+    </footer>
+
+    <button type="button" class="sound-toggle" id="sound-toggle" aria-pressed="false" hidden>
+      <svg class="icon on" aria-hidden="true"><use href="#i-sound-on"/></svg>
+      <svg class="icon off" aria-hidden="true"><use href="#i-sound-off"/></svg>
+    </button>
+
+    <div class="mobile-bar">
+      <a class="button primary-button js-wa" href="https://api.whatsapp.com/message/2DVRTS4D55OAC1?autoload=1&amp;app_absent=0" target="_blank" rel="noreferrer"><svg class="icon" aria-hidden="true"><use href="#i-wa"/></svg><span data-i18n="whatsapp">WhatsApp</span></a>
+      <a class="button secondary-button" href="#inquiry" data-i18n="planShort">Plan an occasion</a>
+    </div>
+
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"Service","name":"Laiz Lux Events","serviceType":"Non-sexual social companionship for events","description":"Strictly non-sexual social company for international visitors and residents in Lisbon and on the Portuguese coast.","areaServed":[{"@type":"City","name":"Lisbon"},{"@type":"City","name":"Cascais"},{"@type":"City","name":"Estoril"},{"@type":"City","name":"Ericeira"},{"@type":"Place","name":"Comporta"}],"availableLanguage":["English","Portuguese"],"audience":{"@type":"Audience","suggestedMinAge":18},"url":"https://mrbiscoitoxxx-web.github.io/","image":"https://mrbiscoitoxxx-web.github.io/og.jpg","provider":{"@type":"LocalBusiness","name":"Laiz Lux Events","telephone":"+351961039001","address":{"@type":"PostalAddress","addressLocality":"Lisbon","addressCountry":"PT"},"areaServed":"Lisbon Metropolitan Area"}}
+    </script>
+    <script type="application/ld+json">
+      {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+        {"@type":"Question","name":"What exactly is included?","acceptedAnswer":{"@type":"Answer","text":"Friendly, attentive company at a public occasion — conversation, a warm presence at the table and someone who knows the city. Nothing else is offered or implied."}},
+        {"@type":"Question","name":"Is this an escort or intimate service?","acceptedAnswer":{"@type":"Answer","text":"No. This is strictly non-sexual social company. Requests of an intimate nature are declined and end the conversation."}},
+        {"@type":"Question","name":"How do I book?","acceptedAnswer":{"@type":"Answer","text":"Send the details on WhatsApp using the form on this page. Messages usually get a reply within the hour. Booking a day or two ahead is best, though same-day is sometimes possible."}},
+        {"@type":"Question","name":"Where do we meet?","acceptedAnswer":{"@type":"Answer","text":"Always at an agreed public venue — a restaurant, a hotel lobby, or the entrance of the event itself."}},
+        {"@type":"Question","name":"How is the fee arranged?","acceptedAnswer":{"@type":"Answer","text":"The rate depends on the duration and location and is agreed on WhatsApp before anything is confirmed."}},
+        {"@type":"Question","name":"Which languages can we speak?","acceptedAnswer":{"@type":"Answer","text":"English and Portuguese, whichever you are more comfortable in."}},
+        {"@type":"Question","name":"Do you travel outside Lisbon?","acceptedAnswer":{"@type":"Answer","text":"Cascais, Estoril, Ericeira and Comporta are all available by arrangement. Anywhere further can be discussed, with travel agreed in advance."}},
+        {"@type":"Question","name":"How discreet is this?","acceptedAnswer":{"@type":"Answer","text":"Completely. Your details are never shared and nothing is published about an occasion without your agreement."}}
+      ]}
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

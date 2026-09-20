@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://mrbiscoitoxxx-web.github.io/</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mrbiscoitoxxx-web.github.io/" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mrbiscoitoxxx-web.github.io/?lang=pt" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mrbiscoitoxxx-web.github.io/" />
+  </url>
+  <url>
+    <loc>https://mrbiscoitoxxx-web.github.io/termos.html</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mrbiscoitoxxx-web.github.io/termos.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mrbiscoitoxxx-web.github.io/termos.html?lang=pt" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mrbiscoitoxxx-web.github.io/termos.html" />
+  </url>
+  <url>
+    <loc>https://mrbiscoitoxxx-web.github.io/privacidade.html</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mrbiscoitoxxx-web.github.io/privacidade.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://mrbiscoitoxxx-web.github.io/privacidade.html?lang=pt" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mrbiscoitoxxx-web.github.io/privacidade.html" />
+  </url>
+</urlset>

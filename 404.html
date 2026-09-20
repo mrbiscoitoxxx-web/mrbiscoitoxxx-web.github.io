@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Page not found — Laiz Lux Events</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="theme-color" content="#0F0D0C" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%236E1B2B'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Georgia' font-size='38' fill='%23C8A24A'%3EL%3C/text%3E%3C/svg%3E" />
+    <link rel="preload" as="font" type="font/woff2" href="fonts/bodoni-500.woff2" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      body.oops {
+        min-height: 100vh; display: grid; place-items: center;
+        padding: 40px 16px;
+        background:
+          radial-gradient(90% 70% at 50% 40%, rgba(110, 27, 43, .5), rgba(11, 10, 9, 0) 70%),
+          var(--ink-black);
+      }
+      .oops main { width: min(520px, 100%); display: grid; justify-items: center; gap: 20px; text-align: center; }
+      .oops .rule { width: 62px; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); }
+      .oops .brand-line {
+        margin: 0; font-family: var(--splash-serif); font-size: 16px; font-weight: 500;
+        letter-spacing: .3em; text-transform: uppercase; color: var(--gold);
+      }
+      .oops .code {
+        margin: 0; font-family: var(--splash-serif); font-size: clamp(64px, 14vw, 104px);
+        font-weight: 500; line-height: 1; color: rgba(243, 230, 200, .22); letter-spacing: .04em;
+      }
+      .oops h1 {
+        margin: 0; font-family: var(--splash-serif); font-weight: 500;
+        font-size: clamp(26px, 4.4vw, 38px); line-height: 1.15; color: #F3E6C8; text-wrap: balance;
+      }
+      .oops p { margin: 0; max-width: 40ch; font-size: 15.5px; line-height: 1.75; color: rgba(255, 255, 255, .68); }
+      .oops p.pt { font-size: 14.5px; color: rgba(255, 255, 255, .5); }
+      .oops .go { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; }
+      .oops .go .button { min-height: 52px; }
+      .oops .secondary-button { border-color: rgba(243, 230, 200, .34); color: rgba(243, 230, 200, .84); }
+      .oops .secondary-button:hover { border-color: #F3E6C8; background: rgba(243, 230, 200, .08); color: #F3E6C8; }
+    </style>
+  </head>
+  <body class="oops">
+    <main>
+      <span class="rule" aria-hidden="true"></span>
+      <p class="brand-line">Laiz Lux Events</p>
+      <p class="code" aria-hidden="true">404</p>
+      <h1>This page does not exist.</h1>
+      <p>The address may have changed, or there may be a typo in it. Everything else is where you left it.</p>
+      <p class="pt" lang="pt">O endereço pode ter mudado, ou pode haver um erro de escrita. O resto está onde o deixou.</p>
+      <div class="go">
+        <a class="button primary-button" href="/#top">Back to the site</a>
+        <a class="button secondary-button" href="/#inquiry">Plan an occasion</a>
+      </div>
+      <span class="rule" aria-hidden="true"></span>
+    </main>
+  </body>
+</html>
